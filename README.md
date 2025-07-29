@@ -105,7 +105,7 @@ sample_data/seq1.fasta, sample_data/seq2.csv
 ---
 
 ## Project Structure
-
+```bash
 dna-sequence-analyser/
 ├── src/
 │   └── analyser.py           # Main application script
@@ -115,5 +115,5 @@ dna-sequence-analyser/
 │   └── seq3.csv
 ├── requirements.txt
 └── README.txt
-
+```
 ---
