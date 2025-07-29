@@ -9,8 +9,8 @@ A beginner-friendly interactive DNA sequence analysis tool written in Python. Th
 The tool provides:
 - Nucleotide counts (A, T, G, C)
 - GC content
-- Transcription (DNA → RNA)
-- Translation (RNA → Protein)
+- Transcription (DNA -> RNA)
+- Translation (RNA -> Protein)
 - Optional: nucleotide distribution plots
 
 ---
@@ -43,23 +43,29 @@ Choose an option:
 ## Sample Input Formats
 
 ### FASTA ('.fasta')
+```bash
 >identifier1 description1
 ATGCTAGCTAGCATCGATCG
 GACTGACTGACAGTCTGATG
 >identifier2 description2
 CGTAGCTAGCGTACGTAGC
 ATGCTAGCTAGCATCGATCG
+```
 
 ### TXT ('.txt')
+```bash
 >identifier1 description1
 ATGCTAGCTAGCATCGATCGGACTGACTGACAGTCTGATG
 >identifier2 description2
 CGTAGCTAGCGTACGTAGCATGCTAGCTAGCATCGATCG
+```
 
 ### CSV ('.csv')
+```bash
 Identifier,Description,Sequence
 identifier1,description1,ATGCTAGCTAGCATCGATCGGACTGACTGACAGTCTGATG
 identifier2,description2,CGTAGCTAGCGTACGTAGCATGCTAGCTAGCATCGATCG
+```
 
 ---
 
