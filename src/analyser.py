@@ -1,5 +1,3 @@
-# src/analyzer.py
-
 import os
 from Bio import SeqIO
 from Bio.Seq import Seq
@@ -15,9 +13,9 @@ def clear():
 
 def home_menu():
     clear()
-    print(Panel.fit("[bold cyan]DNA Sequence Analyzer[/bold cyan]", subtitle="by Molly Romanis"))
+    print(Panel.fit("[bold cyan]DNA Sequence Analyser[/bold cyan]", subtitle="by Molly Romanis"))
     print("Choose an option:\n")
-    print("1. Analyze sequence(s)")
+    print("1. Analyse sequence(s)")
     print("2. Show nucleotide plot(s)")
     print("3. Exit")
 
@@ -26,7 +24,7 @@ def home_menu():
 
 
 def select_file_paths():
-    print("\nEnter paths to input files (comma-separated):")
+    print("\nEnter paths to input files (comma separated):")
     files = input(" > ").strip().split(",")
     return [f.strip() for f in files if f.strip()]
 
@@ -56,7 +54,7 @@ def read_sequence_file(file_path):
     return sequences
 
 
-def analyze_sequence(name, seq):
+def analyse_sequence(name, seq):
     seq = seq.upper()
     counts = Counter(seq)
     gc = (counts.get("G", 0) + counts.get("C", 0)) / len(seq) * 100
@@ -101,7 +99,7 @@ def main():
             for file_path in file_paths:
                 sequences = read_sequence_file(file_path)
                 for name, seq in sequences:
-                    result = analyze_sequence(name, seq)
+                    result = analyse_sequence(name, seq)
                     output_terminal(result)
             input("\nPress Enter to return to menu...")
 
@@ -110,7 +108,7 @@ def main():
             for file_path in file_paths:
                 sequences = read_sequence_file(file_path)
                 for name, seq in sequences:
-                    result = analyze_sequence(name, seq)
+                    result = analyse_sequence(name, seq)
                     output_plot(result)
 
         elif choice == "3":
