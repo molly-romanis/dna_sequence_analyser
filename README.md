@@ -9,8 +9,8 @@ A beginner-friendly interactive DNA sequence analysis tool written in Python. Th
 The tool provides:
 - Nucleotide counts (A, T, G, C)
 - GC content
-- Transcription (DNA → RNA)
-- Translation (RNA → Protein)
+- Transcription (DNA -> RNA)
+- Translation (RNA -> Protein)
 - Optional: nucleotide distribution plots
 
 ---
